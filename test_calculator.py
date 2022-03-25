@@ -7,10 +7,12 @@ class TestCalculator(unittest.TestCase):
     def setUp(self):
         self.x=34
         self.y=30
+        print("setUp called")
 
     def tearDown(self):
         self.x=0
         self.y=0
+        print("tearDown called")
 
 
     def test_add(self):
